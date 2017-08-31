@@ -1,5 +1,5 @@
 $(document).ready(function(){
-var total;
+var total = 0;
 
 // When the Add item button is clicked, this function creates a new table row with the data the user input and adds the new amount into the price total
 $('#add').click(function(){
@@ -17,14 +17,14 @@ $('#add').click(function(){
 
     total += itemTotal;
 
-    $('#totalAmount').append("<h3> Total: $" + itemTotal.toFixed(2) + "</h3>")
+    $('#totalAmount').text("Total: $" + total.toFixed(2))
 
 $('#groceryInput').val('');
 $('#amountInput').val('');
 $('#priceInput').val('');
 });
 
-//Removes Table Row on Delete
+//Removes Table Row on when delete button is clicked
 $("#listTable").on('click', '.deleteThis', function () {
     $(this).closest('tr').remove();
 });
