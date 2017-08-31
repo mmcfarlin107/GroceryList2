@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <title>Grocery Time</title>
 </head>
 <body>
@@ -14,23 +15,41 @@
   </header>
   <section>
     <div class="row justify-content-center">
-      <h2> Enter Groceries and Price Here </h2>
+      <h2> Enter Groceries and Amount </h2>
     </div>
     <div class="row justify-content-center">
       <form>
-        <input type="input" class="col-xs-4" placeholder="Grocery Item">
-        <input type="number" class="col-xs-4" placeholder="Price">
-        <button type="button"> Add to List </button>
+        <input type="input" id="groceryInput" class="col-xs-4" placeholder="Grocery Item">
+        <input type="number" id="amountInput" class="col-xs-4" placeholder="Amount">
+        <input type="number" id="priceInput" class="col-xs-4" placeholder="Price Per Unit">
+        <button type="button" id="add"> Add to List </button>
       </form>
     </div>
   </section>
 
-  <section>
+  <section class="row justify-content-center">
+    <table>
+      <thead>
+      <tr>
+        <th> Item </th>
+        <th> Amount </th>
+        <th> Price for Each </th>
+        <th> Item Total </th>
+      </tr>
+      </thead>
+      <tbody id="groceryItems">
+      </tbody>
+</table>
+
 
   </section>
 </div>
 
 
-
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
