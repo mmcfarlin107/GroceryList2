@@ -9,7 +9,8 @@
   <title>Grocery Time</title>
 </head>
 <body>
-  <div class="container-fluid">
+  <div class="container">
+    <div class="footerFix">
   <header class="row justify-content-center">
     <h1> Grocery Time </h1>
   </header>
@@ -18,7 +19,7 @@
       <h2> Enter Groceries and Amount </h2>
     </div>
     <div class="row justify-content-center">
-      <form>
+      <form id="inputForm">
         <input type="input" id="groceryInput" class="col-xs-4" placeholder="Grocery Item">
         <input type="number" id="amountInput" class="col-xs-4" placeholder="Amount">
         <input type="number" id="priceInput" class="col-xs-4" placeholder="Price Per Unit">
@@ -26,7 +27,6 @@
       </form>
     </div>
   </section>
-
   <section class="row justify-content-center">
     <table>
       <thead>
@@ -35,6 +35,7 @@
         <th> Amount </th>
         <th> Price for Each </th>
         <th> Item Total </th>
+        <th></th>
       </tr>
       </thead>
       <tbody id="groceryItems">
@@ -44,7 +45,10 @@
 
   </section>
 </div>
+</div>
 
+<footer>
+</footer>
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"

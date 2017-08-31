@@ -2,6 +2,14 @@ body{
   background-color: rgb(10, 142, 76);
 }
 
+footer{
+  height: 10vh;
+  background-image: url('assets/veggies.jpg');
+  background-size: contain;
+}
+.footerFix{
+  height: 90vh;
+}
 td, th{
-  padding: 20px;
+  padding: 0px 20px;
 }
