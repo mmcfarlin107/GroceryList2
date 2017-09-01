@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+<script src="https://use.fontawesome.com/1498e13bf7.js"></script>
   <title>Grocery Time</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <div class="footerFix">
   <header class="row justify-content-center">
     <h1> Grocery Time </h1>
@@ -35,7 +37,7 @@
         <th> Amount </th>
         <th> Price for Each </th>
         <th> Item Total </th>
-        <th></th>
+        <th class="blendIn"></th>
       </tr>
       </thead>
       <tbody id="groceryItems">
@@ -43,13 +45,17 @@
 </table>
   </section>
   <section class="row justify-content-center">
-    <h3  id="totalAmount"></h3>
+    <h3  id="totalAmount"> </h3>
   </section>
 </div>
 </div>
 
 <footer>
 </footer>
+
+
+
+
 
 <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"

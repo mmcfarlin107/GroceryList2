@@ -11,16 +11,22 @@ $('#add').click(function(){
   var priceInput = $('#priceInput').val();
   var itemTotal = amountInput * priceInput;
 
-  $('#groceryItems').append("<tr><td>" + groceryInput +
+
+  //this just turns top of notepad page blue
+  $('th').removeClass('blendIn');
+
+  $('#groceryItems').append("<tr class='uLine'><td>" + groceryInput +
     "</td> <td>" + amountInput +
     "</td><td> $" + priceInput +
     "</td><td class='subAmt'> $" + itemTotal.toFixed(2) +
-    "</td> <td> <button class='deleteThis'> Delete Item </button> </td> </tr>");
+    "</td> <td> <i class='deleteThis fa fa-times fa-lg' aria-hidden='true'></i></button> </td> </tr>");
+
+    //The <i> above is used to create a FontAwesome minus image.  The deleteThis class is used by jQuery for a click event.
 
     total += itemTotal;
 
     $('#totalAmount').text("Total: $" + total.toFixed(2))
-
+// Below clears out the inputs after adding an item
 $('#groceryInput').val('');
 $('#amountInput').val('');
 $('#priceInput').val('');
@@ -34,7 +40,6 @@ $("#listTable").on('click', '.deleteThis', function () {
   total -= number;
 $('#totalAmount').text("Total: $" + total.toFixed(2))
     $(this).closest('tr').remove();
-
 });
 
 
