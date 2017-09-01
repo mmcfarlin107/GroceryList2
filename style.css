@@ -21,6 +21,7 @@ h2{
 
 header{
   margin-top: 2vh;
+   text-shadow: 2px 2px 1px #000;
 }
 
 h1{
@@ -38,7 +39,7 @@ footer{
   height: 90vh;
 }
 td, th{
-  padding: 2vh 20px;;
+  padding: 2vh 20px;
 }
 
 button{
@@ -52,4 +53,13 @@ i{
 
 tbody{
   background-color: rgb(239, 241, 136)
+}
+
+tbody tr td{
+  border-bottom: 2pt solid rgb(240, 172, 172);
+}
+
+#totalAmount{
+  margin: 3vh;
+  color: rgb(158, 4, 4);
 }
