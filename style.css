@@ -1,6 +1,12 @@
-body{
+html, body{
   background-color: rgb(10, 142, 76);
   font-family: 'Merriweather', serif;
+  height: 100%;
+  width: 100%;
+}
+
+#wrap {
+  min-height: 100%;
 }
 
 #blendIn{
@@ -8,7 +14,7 @@ background-color: rgb(10, 142, 76);
 }
 
 form{
-  margin: 3vh 0vh 5vh 0vh;
+  margin: 3% 0% 5% 0%;
 }
 thead {
   background-color: rgb(8, 8, 83);
@@ -20,26 +26,23 @@ h2{
 }
 
 header{
-  margin-top: 2vh;
-   text-shadow: 2px 2px 1px #000;
+  margin-top: 2%;
+   text-shadow: 2px 2px 1px #9999;
 }
 
 h1{
   font-size: 3.5rem;
 }
 
-footer{
-  height: 10vh;
-  background-image: url('assets/veggies.jpg');
-  background-size: contain;
+#footer{
   position: relative;
-  margin-top: 5px;
+  margin-top: -50px; /* negative value of footer height */
+  height: 50px;
+  clear:both;
 }
-.footerFix{
-  height: 90vh;
-}
+
 td, th{
-  padding: 2vh 20px;
+  padding: 2% 20px;
 }
 
 button{
@@ -60,6 +63,15 @@ tbody tr td{
 }
 
 #totalAmount{
-  margin: 3vh;
-  color: rgb(158, 4, 4);
+  margin: 3%;
+}
+
+.img-fluid{
+  height: 50px;
+  position: inline-block;
+}
+
+.container{
+  overflow:auto;
+padding-bottom:50px;
 }
