@@ -64,6 +64,7 @@ tbody tr td{
 
 #totalAmount{
   margin: 3%;
+  color: rgb(143, 5, 5);
 }
 
 .img-fluid{
